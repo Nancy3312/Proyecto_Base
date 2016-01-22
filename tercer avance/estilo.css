@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+	body, input	{
+		font-family: "Lucida Sans Unicode";
+		font-size: 11px;
+	}
+	
+	h1{
+		color: #F30;
+		font-size: 12px;
+	}
+	
+	a{
+		cursor: pointer;
+		color: #f00;
+	}
+	
+	#contenedor{
+		width: 780px;
+		margin: auto;
+	}	
+	p.autor{
+		text-align: center;
+	}
+	
+	label.error{
+		color: #900;
+		margin: 4px;
+	}
