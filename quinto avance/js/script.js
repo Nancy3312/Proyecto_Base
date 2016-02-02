@@ -1,4 +1,5 @@
 // JavaScript Document
+alert("llena al script")
             $(document).ready(function(){
                 fn_dar_eliminar();
 				fn_cantidad();
@@ -11,25 +12,25 @@
 			};
             
             function fn_agregar(){
-                var contador=1;
-                for (i = 0; i < $("#valor_num").val(); i++) {
-                    cadena = "<tr>";
-                cadena = cadena + "<td>" + contador + "</td>";
-                cadena = cadena + "<td>" + $("#valor_campo").val() + "</td>";
-                cadena = cadena + "<td>" + $("#valor_tdato").val() + "</td>";
-                cadena = cadena + "<td>" + $("#valor_long").val() + "</td>";
-                cadena = cadena + "<td><a class='elimina'><img src='delete.png' /></a></td>";
-                contador +=1;
-                $("#grilla tbody").append(cadena);
-                }
-                
+                cadena = "<tr>";
+                cadena = cadena + "<td>1</td>";
+                cadena = cadena + "<td>" + $("#valor_uno").val() + "</td>";
+                cadena = cadena + "<td>" + $("#valor_dos").val() + "</td>";
+                cadena = cadena + "<td><select>
+                                    <option>INT</option>
+                                    <option>VARCHAR</option>
+                                    <option>CHAR</option>
+                                    </select></td>";
+                cadena = cadena + "<td>aqui long</td>";
+                cadena = cadena + "<td><a class='elimina'><img src='images/eliminar.png' /></a></td>";
+                $("#mitabla tbody").append(cadena);
                 /*
                     aqui puedes enviar un conunto de tados ajax para agregar al usuairo
                     $.post("agregar.php", {ide_usu: $("#valor_ide").val(), nom_usu: $("#valor_uno").val()});
                 */
                 fn_dar_eliminar();
 				fn_cantidad();
-                //alert("Usuario agregado");
+                alert("Usuario agregado");
             };
             
             function fn_dar_eliminar(){
